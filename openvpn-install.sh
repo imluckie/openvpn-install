@@ -188,7 +188,7 @@ else
 	echo "   1) Current system resolvers"
 	echo "   2) Google"
 	echo "   3) OpenDNS"
-	echo "   4) NTT"
+	echo "   4) AdGuard"
 	echo "   5) Hurricane Electric"
 	echo "   6) Verisign"
 	read -p "DNS [1-6]: " -e -i 1 DNS
@@ -264,8 +264,8 @@ ifconfig-pool-persist ipp.txt" > /etc/openvpn/server.conf
 		echo 'push "dhcp-option DNS 208.67.220.220"' >> /etc/openvpn/server.conf
 		;;
 		4) 
-		echo 'push "dhcp-option DNS 129.250.35.250"' >> /etc/openvpn/server.conf
-		echo 'push "dhcp-option DNS 129.250.35.251"' >> /etc/openvpn/server.conf
+		echo 'push "dhcp-option DNS 176.103.130.130"' >> /etc/openvpn/server.conf
+		echo 'push "dhcp-option DNS 176.103.130.131"' >> /etc/openvpn/server.conf
 		;;
 		5) 
 		echo 'push "dhcp-option DNS 74.82.42.42"' >> /etc/openvpn/server.conf
